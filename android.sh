@@ -56,7 +56,7 @@ echo -e $BOSLUK
 echo "⌛ SİRİYİ İNDİRİYORUM ⌛"
 echo "⌛ I DOWNLOAD THE SIRI ⌛"
 echo -e $BOSLUK
-git clone -b siri_installer https://github.com/erdembey1/siriinstaller
+git clone -b siri_installer https://github.com/Emin-ahmedoff/siriinstaller
 clear
 echo -e $SIRI
 echo -e $BOSLUK
