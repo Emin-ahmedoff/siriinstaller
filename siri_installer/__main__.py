@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
     if os.path.isdir("./TeleUserBot/"):
         rm_r("./TeleUserBot/")
-    repo = Repo.clone_from(str1,"./TeleUserBot/", branch="master")
+    repo = Repo.clone_from(str1,"./https://github.com/Emin-ahmedoff/TeleUserBot/", branch="master")
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
