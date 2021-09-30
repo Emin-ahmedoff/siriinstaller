@@ -97,7 +97,7 @@ if __name__ == "__main__":
     onemli(LANG['GETTING_STRING_SESSION'])
     stri, aid, ahash = main()
     basarili(LANG['SUCCESS_STRING'])
-    SyperStringKey = "SiriUserBot"
+    SyperStringKey = "TeleUserBot"
     baslangic = time()
 
 
