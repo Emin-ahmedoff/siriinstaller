@@ -107,14 +107,14 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
 
-    SyperStringKey = "teleuserbot"
-    GiperStringKey = "teleuserbot/"
+    SyperStringKey = "TeleUserBot"
+    GiperStringKey = "TeleUserBot/"
     InvalidKey = "http://github.com/" 
     str1 = InvalidKey+GiperStringKey+SyperStringKey
 
-    if os.path.isdir("./teleuserbot/"):
-        rm_r("./teleuserbot/")
-    repo = Repo.clone_from(str1,"./teleuserbot/", branch="master")
+    if os.path.isdir("./TeleUserBot/"):
+        rm_r("./TeleUserBot/")
+    repo = Repo.clone_from(str1,"./TeleUserBot/", branch="master")
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
@@ -146,7 +146,7 @@ if __name__ == "__main__":
     config['TMP_DOWNLOAD_DIRECTORY'] = "./downloads/"
     config['TZ'] = TZ
     config['TZ_NUMBER'] = "1"
-    config['UPSTREAM_REPO_URL'] = "https://github.com/SiriUserBot/SiriUserBot"
+    config['UPSTREAM_REPO_URL'] = "https://github.com/Emin-ahmedoff/TeleUserBot"
     config['SEVGILI'] = "None"
     config['WARN_LIMIT'] = "3"
     config['WARN_MODE'] = "gmute"
